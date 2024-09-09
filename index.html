@@ -10,12 +10,12 @@
     <!-- Main Container -->
     <div class="flex justify-center items-center h-[100vh] w-full bg-black">
         <!-- Content Container -->
-        <div class="flex flex-col pt-8 items-center h-[80%] w-[40%] bg-white rounded-lg">
+        <div class="flex flex-col pt-8 items-center h-[80%] overflow-y-scroll w-[40%] bg-gray-100 max-md:w-[80%] max-sm:w-[100%] max-lg:w-[65%] max-sm:h-[100vh] max-sm:rounded-none  rounded-lg">
 
             <!-- Input fields for adding a new question and answer -->
-            <input type="text" id="questionInput" placeholder="Enter your question" class="mb-2 p-2 border rounded w-[90%]">
-            <input type="text" id="answerInput" placeholder="Enter your answer" class="mb-2 p-2 border rounded w-[90%]">
-            <button id="addQuestionButton" class="mb-4 p-2 bg-blue-500 text-white rounded">Add Question</button>
+            <input type="text" id="questionInput" placeholder="Enter your question" class="mb-2 p-2 border max-md:text-md max-sm:text-sm rounded w-[90%]">
+            <input type="text" id="answerInput" placeholder="Enter your answer" class="mb-2 max-md:text-md max-sm:text-sm p-2 border rounded w-[90%]">
+            <button id="addQuestionButton" class="mb-4 p-2 bg-blue-500 max-md:text-md max-sm:text-sm text-white rounded">Add Question</button>
 
             <!-- Container where dynamically added questions will appear -->
             <div class="flex  items-center justify-center flex-col w-[100%]" id="container"></div>
