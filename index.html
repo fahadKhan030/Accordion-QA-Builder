@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Questions and Answers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="flex justify-center items-center h-[100vh] w-full bg-black">
+        <!-- Content Container -->
+        <div class="flex flex-col pt-8 items-center h-[80%] w-[40%] bg-white rounded-lg">
+
+            <!-- Input fields for adding a new question and answer -->
+            <input type="text" id="questionInput" placeholder="Enter your question" class="mb-2 p-2 border rounded w-[90%]">
+            <input type="text" id="answerInput" placeholder="Enter your answer" class="mb-2 p-2 border rounded w-[90%]">
+            <button id="addQuestionButton" class="mb-4 p-2 bg-blue-500 text-white rounded">Add Question</button>
+
+            <!-- Container where dynamically added questions will appear -->
+            <div class="flex  items-center justify-center flex-col w-[100%]" id="container"></div>
+       </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+    
